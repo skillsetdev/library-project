@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <dialog>
+      <form method="dialog" id="dialogForm">
+        <label>Title:<input type="text" name="title" required /></label>
+        <label>Author:<input type="text" name="author" required /></label>
+        <label
+          >Number of pages:<input type="number" name="pages" required
+        /></label>
+        <label
+          >Have you read it?<select name="read">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select></label
+        >
+        <div>
+          <input type="submit" id="submit" value="Submit" />
+          <button autofocus id="closeBtn">Close</button>
+        </div>
+      </form>
+    </dialog>
+    <header>
+      <h3>Library</h3>
+      <button id="add">add +</button>
+    </header>
+    <div class="grid">
+      <div class="book-item">
+        <p class="title">"Concepts of Genetics"</p>
+        <p class="author">Klug, Cummings, Spencer</p>
+        <p class="pages">867</p>
+        <button class="read">read</button>
+      </div>
+      <div class="book-item">
+        <p class="title">"The Code Breaker"</p>
+        <p class="author">Walter Isaacson</p>
+        <p class="pages">842</p>
+        <button class="read">read</button>
+      </div>
+      <div class="book-item">
+        <p class="title">"1984"</p>
+        <p class="author">G. Oruell</p>
+        <p class="pages">134</p>
+        <button class="read">unread</button>
+      </div>
+    </div>
+  </body>
+</html>
